@@ -119,34 +119,57 @@
   </resheader>
   <data name="RtxtQA.Text" xml:space="preserve">
     <value>1. What do you understand by the term ‘Visual Programming Environment? Give an example of ‘Visual Programming Environment’.
+Software which allows the use of visual expressions (such as graphics, drawings, animations, or icons) in the process of programming.
+
 
 2. What do you understand by the term ‘Visual Studio’? Briefly describe four main features of the ‘Visual Studio’.
+It is used to develop computer programs, as well as websites, web apps, web services and mobile apps main features:
+-Develop - Navigate, write and fix code fast.
+-Debug - Debug, profile and diagnose with ease.
+-Test - Write high-quality code with comprehensive testing tools.
+-Extend - Choose from thousands of extension to customise your IDE.
 
-3. What do you understand by the term ‘.NET’?
+
+3. What do you understand by the term '.NET'?
+.NET framework includes a large class library and provides language interoperability across several programming languages.
+
+
 4. List and describe the three major components of the .NET Framework.
+FCL - Framework Class Library is a collection of classes, namespaces, interfaces, and value types that are used for .NET applications.
+CLR - Common Runtime Error manages and executes the code written in any .NET programming language. Itconverts code into native code which further can be executed by the CPU.
+CLS - Common Language Specification defines set of rules and restrictions that every language must follow which runs under the .NET framework.
+CTS - Common Type System describes the datatypes that can be used by managed code if describes how these types are declared, used and managed in the runtime.
+
 
 5: Programs written under the .NET framework undergo two compilation process. Why do we need two compilation processes?
+So that it can be run by the OS.
+
 
 6. Briefly explain what are ‘Namespaces’ in the .NET Framework.
+Namespace is a way that is used for logical grouping of functionalities. It allows us to organise the code in a much cleaner way.
+
 
 7. Name any two .NET Framework Namespaces you know.
+System.web
+System.Netand
+
 
 8. In VS NET the code you create is organized using different layers of grouping. Briefly explain the purpose of each of these layers:
-Solutions:-
-
-Projects:-
-
-Files:-
-
-Solution Explorer:-
-
-Toolbox:-
-
-Properties Window:-
+Solutions - Has a solution file that keeps track of the projects that make up the solution.
+Projects - Has one project file that keeps track of the files that make up a project and  records various settings for the project.
+Files - Form files now have a suffix of .vb!
+Solution Explorer - A tool window and is typically docked along the right edge of the IDE.
+Toolbox - Provides various controls to include in the code like groupbox, combobox...
+Properties Window - A tool window.
 
 
 9. List the three main programming languages under the .NET Framework.
+Visual basic .net
+Visual c# .net
+Visual c++ .net
 
-10.What does ‘IDE’ stand for? Briefly describe what is an IDE.</value>
+
+10.What does ‘IDE’ stand for? Briefly describe what is an IDE.
+Integrated Development Environment enables programmes to consolidate the different aspects of writing a computer program.</value>
   </data>
 </root>
