@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class FormSmoker
+Partial Class FormSmokerV1
 	Inherits System.Windows.Forms.Form
 
 	'Form overrides dispose to clean up the component list.
@@ -115,7 +115,7 @@ Partial Class FormSmoker
 		Me.ButtonExit.Text = "Exit"
 		Me.ButtonExit.UseVisualStyleBackColor = True
 		'
-		'FormSmoker
+		'FormSmokerV1
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -129,8 +129,8 @@ Partial Class FormSmoker
 		Me.Controls.Add(Me.LabelSmokerNot)
 		Me.Controls.Add(Me.RadioButtonNonSmoker)
 		Me.Controls.Add(Me.RadioButtonSmoker)
-		Me.Name = "FormSmoker"
-		Me.Text = "Smoker"
+		Me.Name = "FormSmokerV1"
+		Me.Text = "SmokerV1"
 		Me.ResumeLayout(False)
 		Me.PerformLayout()
 

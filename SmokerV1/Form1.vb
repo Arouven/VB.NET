@@ -1,7 +1,7 @@
 ﻿
 Imports System.String
 
-Public Class FormSmoker
+Public Class FormSmokerV1
 
     Private SmokerNonSmoker As String
     Private mintAge As Integer
@@ -15,8 +15,6 @@ Public Class FormSmoker
         ElseIf RadioButtonNonSmoker.Checked Then
             SmokerNonSmoker = "Non-Smoker"
         End If
-
-
 
         mintAge = CInt(TextBoxAge.Text)
         If SmokerNonSmoker = "Smoker" Then
