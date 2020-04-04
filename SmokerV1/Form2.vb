@@ -2,50 +2,58 @@
 
 Public Class FormSmokerV2
 
-	Private SmokerNonSmoker As String
-	Private mintAge As Integer
+	Private mblnSmoker As Integer
+	Private mStrSmoker As String
+	Private mstrAge As String
 	Private msngRate As Single
 
 
 	Private Sub ButtonCalculateInsurance_Click(sender As Object, e As EventArgs) Handles ButtonCalculateInsurance.Click
-
-		If RadioButtonSmoker.Checked Then
-			SmokerNonSmoker = "Smoker"
-		ElseIf RadioButtonNonSmoker.Checked Then
-			SmokerNonSmoker = "Non-Smoker"
-		End If
-
-		mintAge = CInt(TextBoxAge.Text)
-		If SmokerNonSmoker = "Smoker" Then
-			If mintAge < 20 Then
-				msngRate = 242.55
-			ElseIf mintAge < 40 Then
-				msngRate = 265.75
-			Else
-				msngRate = 292.85
-			End If
+		mStrSmoker = ComboBoxSmokerOrNot.Text
+		mstrAge = ComboBoxAge.Text
+		mblnSmoker = String.Compare(mStrSmoker, "Smoker", True)
+		If mblnSmoker = 0 Then
+			Select Case mstrAge
+				Case "0 to 20"
+					msngRate = 242.55
+				Case "21 to 40"
+					msngRate = 265.75
+				Case Else
+					msngRate = 292.85
+			End Select
 		Else
-			If mintAge < 20 Then
-				msngRate = 142.55
-			ElseIf mintAge < 40 Then
-				msngRate = 165.75
-			Else
-				msngRate = 192.85
-			End If
+			Select Case mstrAge
+				Case "0 to 20"
+					msngRate = 142.55
+				Case "21 to 40"
+					msngRate = 165.75
+				Case Else
+					msngRate = 192.85
+			End Select
 		End If
 		TextBoxInsurance.Text = msngRate
-
 	End Sub
 
 	Private Sub ButtonClear_Click(sender As Object, e As EventArgs) Handles ButtonClear.Click
-		RadioButtonNonSmoker.Checked = True
-		TextBoxAge.Text = ""
+		ComboBoxSmokerOrNot.Text = " "
+		ComboBoxAge.Text = ""
+		mStrSmoker = ""
 		TextBoxInsurance.Text = ""
 	End Sub
 
 	Private Sub ButtonExit_Click(sender As Object, e As EventArgs) Handles ButtonExit.Click
-		End
+		Me.Close()
 	End Sub
 
+	Private Sub FormSmokerV2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+		ComboBoxSmokerOrNot.Items.Clear()
+		ComboBoxSmokerOrNot.Items.Add("Smoker")
+		ComboBoxSmokerOrNot.Items.Add("Non-Smoker")
+
+		ComboBoxAge.Items.Clear()
+		ComboBoxAge.Items.Add("0 to 20")
+		ComboBoxAge.Items.Add("21 to 40")
+		ComboBoxAge.Items.Add("Above 40")
+	End Sub
 End Class
 

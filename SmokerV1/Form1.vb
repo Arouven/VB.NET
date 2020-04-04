@@ -45,9 +45,13 @@ Public Class FormSmokerV1
     End Sub
 
     Private Sub ButtonExit_Click(sender As Object, e As EventArgs) Handles ButtonExit.Click
-        End
+        Me.Close()
     End Sub
 
+    Private Sub FormSmokerV1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim F2 As New FormSmokerV2()
+        F2.Show()
+    End Sub
 End Class
 
 
