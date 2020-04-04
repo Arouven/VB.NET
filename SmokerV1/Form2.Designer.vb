@@ -57,6 +57,7 @@ Partial Class FormSmokerV2
 		Me.TextBoxInsurance.Name = "TextBoxInsurance"
 		Me.TextBoxInsurance.Size = New System.Drawing.Size(303, 20)
 		Me.TextBoxInsurance.TabIndex = 15
+		Me.TextBoxInsurance.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		'
 		'ButtonCalculateInsurance
 		'
@@ -114,6 +115,8 @@ Partial Class FormSmokerV2
 		Me.Controls.Add(Me.ButtonCalculateInsurance)
 		Me.Controls.Add(Me.LabelAge)
 		Me.Controls.Add(Me.LabelSmokerNot)
+		Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+		Me.MaximizeBox = False
 		Me.Name = "FormSmokerV2"
 		Me.Text = "SmokerV2"
 		Me.ResumeLayout(False)

@@ -129,6 +129,8 @@ Partial Class FormSmokerV1
 		Me.Controls.Add(Me.LabelSmokerNot)
 		Me.Controls.Add(Me.RadioButtonNonSmoker)
 		Me.Controls.Add(Me.RadioButtonSmoker)
+		Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+		Me.MaximizeBox = False
 		Me.Name = "FormSmokerV1"
 		Me.Text = "SmokerV1"
 		Me.ResumeLayout(False)
