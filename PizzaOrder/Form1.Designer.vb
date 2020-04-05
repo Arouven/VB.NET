@@ -24,19 +24,19 @@ Partial Class FormPizzaOrder
 	Private Sub InitializeComponent()
 		Me.ButtonBuildPizza = New System.Windows.Forms.Button()
 		Me.PanelSize = New System.Windows.Forms.Panel()
-		Me.RadioButtonSmall = New System.Windows.Forms.RadioButton()
-		Me.RadioButtonMedium = New System.Windows.Forms.RadioButton()
 		Me.RadioButtonLarge = New System.Windows.Forms.RadioButton()
+		Me.RadioButtonMedium = New System.Windows.Forms.RadioButton()
+		Me.RadioButtonSmall = New System.Windows.Forms.RadioButton()
 		Me.PanelCrustType = New System.Windows.Forms.Panel()
-		Me.RadioButtonThinCrust = New System.Windows.Forms.RadioButton()
 		Me.RadioButtonThickCrust = New System.Windows.Forms.RadioButton()
+		Me.RadioButtonThinCrust = New System.Windows.Forms.RadioButton()
 		Me.PanelToppings = New System.Windows.Forms.Panel()
-		Me.CheckBoxExtraCheese = New System.Windows.Forms.CheckBox()
-		Me.CheckBoxMushrooms = New System.Windows.Forms.CheckBox()
-		Me.CheckBoxBlackOlive = New System.Windows.Forms.CheckBox()
-		Me.CheckBoxOnions = New System.Windows.Forms.CheckBox()
-		Me.CheckBoxGreenPepper = New System.Windows.Forms.CheckBox()
 		Me.CheckBoxTomatoes = New System.Windows.Forms.CheckBox()
+		Me.CheckBoxGreenPepper = New System.Windows.Forms.CheckBox()
+		Me.CheckBoxOnions = New System.Windows.Forms.CheckBox()
+		Me.CheckBoxBlackOlive = New System.Windows.Forms.CheckBox()
+		Me.CheckBoxMushrooms = New System.Windows.Forms.CheckBox()
+		Me.CheckBoxExtraCheese = New System.Windows.Forms.CheckBox()
 		Me.RadioButtonEateIn = New System.Windows.Forms.RadioButton()
 		Me.RadioButtonTakeOut = New System.Windows.Forms.RadioButton()
 		Me.ButtonExit = New System.Windows.Forms.Button()
@@ -56,6 +56,7 @@ Partial Class FormPizzaOrder
 		'
 		'PanelSize
 		'
+		Me.PanelSize.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 		Me.PanelSize.Controls.Add(Me.RadioButtonLarge)
 		Me.PanelSize.Controls.Add(Me.RadioButtonMedium)
 		Me.PanelSize.Controls.Add(Me.RadioButtonSmall)
@@ -63,6 +64,26 @@ Partial Class FormPizzaOrder
 		Me.PanelSize.Name = "PanelSize"
 		Me.PanelSize.Size = New System.Drawing.Size(93, 73)
 		Me.PanelSize.TabIndex = 1
+		'
+		'RadioButtonLarge
+		'
+		Me.RadioButtonLarge.AutoSize = True
+		Me.RadioButtonLarge.Location = New System.Drawing.Point(3, 49)
+		Me.RadioButtonLarge.Name = "RadioButtonLarge"
+		Me.RadioButtonLarge.Size = New System.Drawing.Size(52, 17)
+		Me.RadioButtonLarge.TabIndex = 2
+		Me.RadioButtonLarge.Text = "Large"
+		Me.RadioButtonLarge.UseVisualStyleBackColor = True
+		'
+		'RadioButtonMedium
+		'
+		Me.RadioButtonMedium.AutoSize = True
+		Me.RadioButtonMedium.Location = New System.Drawing.Point(3, 26)
+		Me.RadioButtonMedium.Name = "RadioButtonMedium"
+		Me.RadioButtonMedium.Size = New System.Drawing.Size(62, 17)
+		Me.RadioButtonMedium.TabIndex = 1
+		Me.RadioButtonMedium.Text = "Medium"
+		Me.RadioButtonMedium.UseVisualStyleBackColor = True
 		'
 		'RadioButtonSmall
 		'
@@ -76,34 +97,27 @@ Partial Class FormPizzaOrder
 		Me.RadioButtonSmall.Text = "Small"
 		Me.RadioButtonSmall.UseVisualStyleBackColor = True
 		'
-		'RadioButtonMedium
-		'
-		Me.RadioButtonMedium.AutoSize = True
-		Me.RadioButtonMedium.Location = New System.Drawing.Point(3, 26)
-		Me.RadioButtonMedium.Name = "RadioButtonMedium"
-		Me.RadioButtonMedium.Size = New System.Drawing.Size(62, 17)
-		Me.RadioButtonMedium.TabIndex = 1
-		Me.RadioButtonMedium.Text = "Medium"
-		Me.RadioButtonMedium.UseVisualStyleBackColor = True
-		'
-		'RadioButtonLarge
-		'
-		Me.RadioButtonLarge.AutoSize = True
-		Me.RadioButtonLarge.Location = New System.Drawing.Point(3, 49)
-		Me.RadioButtonLarge.Name = "RadioButtonLarge"
-		Me.RadioButtonLarge.Size = New System.Drawing.Size(52, 17)
-		Me.RadioButtonLarge.TabIndex = 2
-		Me.RadioButtonLarge.Text = "Large"
-		Me.RadioButtonLarge.UseVisualStyleBackColor = True
-		'
 		'PanelCrustType
 		'
+		Me.PanelCrustType.AccessibleName = ""
+		Me.PanelCrustType.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 		Me.PanelCrustType.Controls.Add(Me.RadioButtonThickCrust)
 		Me.PanelCrustType.Controls.Add(Me.RadioButtonThinCrust)
 		Me.PanelCrustType.Location = New System.Drawing.Point(10, 91)
 		Me.PanelCrustType.Name = "PanelCrustType"
 		Me.PanelCrustType.Size = New System.Drawing.Size(95, 50)
 		Me.PanelCrustType.TabIndex = 2
+		Me.PanelCrustType.Tag = ""
+		'
+		'RadioButtonThickCrust
+		'
+		Me.RadioButtonThickCrust.AutoSize = True
+		Me.RadioButtonThickCrust.Location = New System.Drawing.Point(3, 26)
+		Me.RadioButtonThickCrust.Name = "RadioButtonThickCrust"
+		Me.RadioButtonThickCrust.Size = New System.Drawing.Size(79, 17)
+		Me.RadioButtonThickCrust.TabIndex = 1
+		Me.RadioButtonThickCrust.Text = "Thick Crust"
+		Me.RadioButtonThickCrust.UseVisualStyleBackColor = True
 		'
 		'RadioButtonThinCrust
 		'
@@ -117,18 +131,9 @@ Partial Class FormPizzaOrder
 		Me.RadioButtonThinCrust.Text = "Thin Crust"
 		Me.RadioButtonThinCrust.UseVisualStyleBackColor = True
 		'
-		'RadioButtonThickCrust
-		'
-		Me.RadioButtonThickCrust.AutoSize = True
-		Me.RadioButtonThickCrust.Location = New System.Drawing.Point(3, 26)
-		Me.RadioButtonThickCrust.Name = "RadioButtonThickCrust"
-		Me.RadioButtonThickCrust.Size = New System.Drawing.Size(79, 17)
-		Me.RadioButtonThickCrust.TabIndex = 1
-		Me.RadioButtonThickCrust.Text = "Thick Crust"
-		Me.RadioButtonThickCrust.UseVisualStyleBackColor = True
-		'
 		'PanelToppings
 		'
+		Me.PanelToppings.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 		Me.PanelToppings.Controls.Add(Me.CheckBoxTomatoes)
 		Me.PanelToppings.Controls.Add(Me.CheckBoxGreenPepper)
 		Me.PanelToppings.Controls.Add(Me.CheckBoxOnions)
@@ -140,45 +145,15 @@ Partial Class FormPizzaOrder
 		Me.PanelToppings.Size = New System.Drawing.Size(200, 70)
 		Me.PanelToppings.TabIndex = 3
 		'
-		'CheckBoxExtraCheese
+		'CheckBoxTomatoes
 		'
-		Me.CheckBoxExtraCheese.AutoSize = True
-		Me.CheckBoxExtraCheese.Location = New System.Drawing.Point(3, 3)
-		Me.CheckBoxExtraCheese.Name = "CheckBoxExtraCheese"
-		Me.CheckBoxExtraCheese.Size = New System.Drawing.Size(89, 17)
-		Me.CheckBoxExtraCheese.TabIndex = 0
-		Me.CheckBoxExtraCheese.Text = "Extra Cheese"
-		Me.CheckBoxExtraCheese.UseVisualStyleBackColor = True
-		'
-		'CheckBoxMushrooms
-		'
-		Me.CheckBoxMushrooms.AutoSize = True
-		Me.CheckBoxMushrooms.Location = New System.Drawing.Point(3, 26)
-		Me.CheckBoxMushrooms.Name = "CheckBoxMushrooms"
-		Me.CheckBoxMushrooms.Size = New System.Drawing.Size(80, 17)
-		Me.CheckBoxMushrooms.TabIndex = 1
-		Me.CheckBoxMushrooms.Text = "Mushrooms"
-		Me.CheckBoxMushrooms.UseVisualStyleBackColor = True
-		'
-		'CheckBoxBlackOlive
-		'
-		Me.CheckBoxBlackOlive.AutoSize = True
-		Me.CheckBoxBlackOlive.Location = New System.Drawing.Point(3, 49)
-		Me.CheckBoxBlackOlive.Name = "CheckBoxBlackOlive"
-		Me.CheckBoxBlackOlive.Size = New System.Drawing.Size(80, 17)
-		Me.CheckBoxBlackOlive.TabIndex = 2
-		Me.CheckBoxBlackOlive.Text = "Black Olive"
-		Me.CheckBoxBlackOlive.UseVisualStyleBackColor = True
-		'
-		'CheckBoxOnions
-		'
-		Me.CheckBoxOnions.AutoSize = True
-		Me.CheckBoxOnions.Location = New System.Drawing.Point(98, 3)
-		Me.CheckBoxOnions.Name = "CheckBoxOnions"
-		Me.CheckBoxOnions.Size = New System.Drawing.Size(59, 17)
-		Me.CheckBoxOnions.TabIndex = 3
-		Me.CheckBoxOnions.Text = "Onions"
-		Me.CheckBoxOnions.UseVisualStyleBackColor = True
+		Me.CheckBoxTomatoes.AutoSize = True
+		Me.CheckBoxTomatoes.Location = New System.Drawing.Point(98, 49)
+		Me.CheckBoxTomatoes.Name = "CheckBoxTomatoes"
+		Me.CheckBoxTomatoes.Size = New System.Drawing.Size(73, 17)
+		Me.CheckBoxTomatoes.TabIndex = 5
+		Me.CheckBoxTomatoes.Text = "Tomatoes"
+		Me.CheckBoxTomatoes.UseVisualStyleBackColor = True
 		'
 		'CheckBoxGreenPepper
 		'
@@ -190,15 +165,45 @@ Partial Class FormPizzaOrder
 		Me.CheckBoxGreenPepper.Text = "Green Pepper"
 		Me.CheckBoxGreenPepper.UseVisualStyleBackColor = True
 		'
-		'CheckBoxTomatoes
+		'CheckBoxOnions
 		'
-		Me.CheckBoxTomatoes.AutoSize = True
-		Me.CheckBoxTomatoes.Location = New System.Drawing.Point(98, 49)
-		Me.CheckBoxTomatoes.Name = "CheckBoxTomatoes"
-		Me.CheckBoxTomatoes.Size = New System.Drawing.Size(73, 17)
-		Me.CheckBoxTomatoes.TabIndex = 5
-		Me.CheckBoxTomatoes.Text = "Tomatoes"
-		Me.CheckBoxTomatoes.UseVisualStyleBackColor = True
+		Me.CheckBoxOnions.AutoSize = True
+		Me.CheckBoxOnions.Location = New System.Drawing.Point(98, 3)
+		Me.CheckBoxOnions.Name = "CheckBoxOnions"
+		Me.CheckBoxOnions.Size = New System.Drawing.Size(59, 17)
+		Me.CheckBoxOnions.TabIndex = 3
+		Me.CheckBoxOnions.Text = "Onions"
+		Me.CheckBoxOnions.UseVisualStyleBackColor = True
+		'
+		'CheckBoxBlackOlive
+		'
+		Me.CheckBoxBlackOlive.AutoSize = True
+		Me.CheckBoxBlackOlive.Location = New System.Drawing.Point(3, 49)
+		Me.CheckBoxBlackOlive.Name = "CheckBoxBlackOlive"
+		Me.CheckBoxBlackOlive.Size = New System.Drawing.Size(80, 17)
+		Me.CheckBoxBlackOlive.TabIndex = 2
+		Me.CheckBoxBlackOlive.Text = "Black Olive"
+		Me.CheckBoxBlackOlive.UseVisualStyleBackColor = True
+		'
+		'CheckBoxMushrooms
+		'
+		Me.CheckBoxMushrooms.AutoSize = True
+		Me.CheckBoxMushrooms.Location = New System.Drawing.Point(3, 26)
+		Me.CheckBoxMushrooms.Name = "CheckBoxMushrooms"
+		Me.CheckBoxMushrooms.Size = New System.Drawing.Size(80, 17)
+		Me.CheckBoxMushrooms.TabIndex = 1
+		Me.CheckBoxMushrooms.Text = "Mushrooms"
+		Me.CheckBoxMushrooms.UseVisualStyleBackColor = True
+		'
+		'CheckBoxExtraCheese
+		'
+		Me.CheckBoxExtraCheese.AutoSize = True
+		Me.CheckBoxExtraCheese.Location = New System.Drawing.Point(3, 3)
+		Me.CheckBoxExtraCheese.Name = "CheckBoxExtraCheese"
+		Me.CheckBoxExtraCheese.Size = New System.Drawing.Size(89, 17)
+		Me.CheckBoxExtraCheese.TabIndex = 0
+		Me.CheckBoxExtraCheese.Text = "Extra Cheese"
+		Me.CheckBoxExtraCheese.UseVisualStyleBackColor = True
 		'
 		'RadioButtonEateIn
 		'
