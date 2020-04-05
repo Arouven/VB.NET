@@ -38,7 +38,7 @@ Partial Class FormInterest
 		'LabelPrincipal
 		'
 		Me.LabelPrincipal.AutoSize = True
-		Me.LabelPrincipal.Location = New System.Drawing.Point(435, 15)
+		Me.LabelPrincipal.Location = New System.Drawing.Point(338, 12)
 		Me.LabelPrincipal.Name = "LabelPrincipal"
 		Me.LabelPrincipal.Size = New System.Drawing.Size(65, 13)
 		Me.LabelPrincipal.TabIndex = 0
@@ -46,7 +46,7 @@ Partial Class FormInterest
 		'
 		'TextBoxPrincipal
 		'
-		Me.TextBoxPrincipal.Location = New System.Drawing.Point(551, 12)
+		Me.TextBoxPrincipal.Location = New System.Drawing.Point(454, 9)
 		Me.TextBoxPrincipal.Name = "TextBoxPrincipal"
 		Me.TextBoxPrincipal.Size = New System.Drawing.Size(100, 20)
 		Me.TextBoxPrincipal.TabIndex = 1
@@ -54,7 +54,7 @@ Partial Class FormInterest
 		'LabelRate
 		'
 		Me.LabelRate.AutoSize = True
-		Me.LabelRate.Location = New System.Drawing.Point(435, 41)
+		Me.LabelRate.Location = New System.Drawing.Point(338, 38)
 		Me.LabelRate.Name = "LabelRate"
 		Me.LabelRate.Size = New System.Drawing.Size(97, 13)
 		Me.LabelRate.TabIndex = 2
@@ -62,7 +62,7 @@ Partial Class FormInterest
 		'
 		'TextBoxRate
 		'
-		Me.TextBoxRate.Location = New System.Drawing.Point(551, 38)
+		Me.TextBoxRate.Location = New System.Drawing.Point(454, 35)
 		Me.TextBoxRate.Name = "TextBoxRate"
 		Me.TextBoxRate.Size = New System.Drawing.Size(100, 20)
 		Me.TextBoxRate.TabIndex = 3
@@ -70,7 +70,7 @@ Partial Class FormInterest
 		'LabelCompound
 		'
 		Me.LabelCompound.AutoSize = True
-		Me.LabelCompound.Location = New System.Drawing.Point(435, 67)
+		Me.LabelCompound.Location = New System.Drawing.Point(338, 64)
 		Me.LabelCompound.Name = "LabelCompound"
 		Me.LabelCompound.Size = New System.Drawing.Size(110, 13)
 		Me.LabelCompound.TabIndex = 4
@@ -79,7 +79,7 @@ Partial Class FormInterest
 		'LabelTime
 		'
 		Me.LabelTime.AutoSize = True
-		Me.LabelTime.Location = New System.Drawing.Point(435, 93)
+		Me.LabelTime.Location = New System.Drawing.Point(338, 90)
 		Me.LabelTime.Name = "LabelTime"
 		Me.LabelTime.Size = New System.Drawing.Size(64, 13)
 		Me.LabelTime.TabIndex = 5
@@ -87,14 +87,14 @@ Partial Class FormInterest
 		'
 		'TextBoxTime
 		'
-		Me.TextBoxTime.Location = New System.Drawing.Point(551, 90)
+		Me.TextBoxTime.Location = New System.Drawing.Point(454, 87)
 		Me.TextBoxTime.Name = "TextBoxTime"
 		Me.TextBoxTime.Size = New System.Drawing.Size(100, 20)
 		Me.TextBoxTime.TabIndex = 6
 		'
 		'ButtonCalculate
 		'
-		Me.ButtonCalculate.Location = New System.Drawing.Point(577, 147)
+		Me.ButtonCalculate.Location = New System.Drawing.Point(479, 175)
 		Me.ButtonCalculate.Name = "ButtonCalculate"
 		Me.ButtonCalculate.Size = New System.Drawing.Size(75, 23)
 		Me.ButtonCalculate.TabIndex = 7
@@ -103,7 +103,7 @@ Partial Class FormInterest
 		'
 		'ButtonClear
 		'
-		Me.ButtonClear.Location = New System.Drawing.Point(439, 147)
+		Me.ButtonClear.Location = New System.Drawing.Point(341, 175)
 		Me.ButtonClear.Name = "ButtonClear"
 		Me.ButtonClear.Size = New System.Drawing.Size(75, 23)
 		Me.ButtonClear.TabIndex = 8
@@ -112,7 +112,7 @@ Partial Class FormInterest
 		'
 		'TextBoxCompound
 		'
-		Me.TextBoxCompound.Location = New System.Drawing.Point(551, 64)
+		Me.TextBoxCompound.Location = New System.Drawing.Point(454, 61)
 		Me.TextBoxCompound.Name = "TextBoxCompound"
 		Me.TextBoxCompound.Size = New System.Drawing.Size(100, 20)
 		Me.TextBoxCompound.TabIndex = 10
@@ -129,7 +129,7 @@ Partial Class FormInterest
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-		Me.ClientSize = New System.Drawing.Size(663, 212)
+		Me.ClientSize = New System.Drawing.Size(564, 212)
 		Me.Controls.Add(Me.ListBoxInterest)
 		Me.Controls.Add(Me.TextBoxCompound)
 		Me.Controls.Add(Me.ButtonClear)

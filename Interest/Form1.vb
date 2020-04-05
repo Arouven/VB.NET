@@ -28,30 +28,34 @@
     End Sub
 
     Private Sub ButtonCalculate_Click(sender As Object, e As EventArgs) Handles ButtonCalculate.Click
-        ListBoxInterest
+        Dim fmtHeader As String = "{0,0}{1,25}{2,30}"
+        Dim fmtDetails As String = "{0,0}{1,20:N2}{2,35:N2}"
+
+        Dim currentYear As Integer = DateTime.Now.ToString("yyyy")
+        Dim simple As Double
+        Dim compound As Double
+        Dim p As Double = 2500 'TextBoxPrincipal.Text
+        Dim r As Double = 7 'TextBoxRate.Text
+        Dim n As Double = 4 'TextBoxCompound.Text
+        Dim t As Double = 10 'TextBoxTime.Text
+
+        With ListBoxInterest.Items
+            .Clear()
+            .Add(String.Format(fmtHeader, "Year", "Simple Interest", "Compound Interest"))
+            For ty As Integer = 0 To t Step 1
+                simple = (p * r * ty) / 100
+                compound = 0
+                .Add(String.Format(fmtDetails, ty, simple, compound))
+            Next
+        End With
     End Sub
 
     Private Sub ButtonClear_Click(sender As Object, e As EventArgs) Handles ButtonClear.Click
-
+        TextBoxPrincipal.Text = ""
+        TextBoxRate.Text = ""
+        TextBoxCompound.Text = ""
+        TextBoxTime.Text = ""
     End Sub
 
-    Private Sub TextBoxTime_TextChanged(sender As Object, e As EventArgs) Handles TextBoxTime.TextChanged
 
-    End Sub
-
-    Private Sub TextBoxCompound_TextChanged(sender As Object, e As EventArgs) Handles TextBoxCompound.TextChanged
-
-    End Sub
-
-    Private Sub TextBoxRate_TextChanged(sender As Object, e As EventArgs) Handles TextBoxRate.TextChanged
-
-    End Sub
-
-    Private Sub TextBoxPrincipal_TextChanged(sender As Object, e As EventArgs) Handles TextBoxPrincipal.TextChanged
-
-    End Sub
-
-    Private Sub ListBoxInterest_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBoxInterest.SelectedIndexChanged
-
-    End Sub
 End Class
