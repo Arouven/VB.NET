@@ -35,7 +35,7 @@ Partial Class FormBouncingBall
 		'
 		'ButtonAnimate
 		'
-		Me.ButtonAnimate.Location = New System.Drawing.Point(29, 38)
+		Me.ButtonAnimate.Location = New System.Drawing.Point(12, 12)
 		Me.ButtonAnimate.Name = "ButtonAnimate"
 		Me.ButtonAnimate.Size = New System.Drawing.Size(75, 23)
 		Me.ButtonAnimate.TabIndex = 0
@@ -44,7 +44,7 @@ Partial Class FormBouncingBall
 		'
 		'ButtonStop
 		'
-		Me.ButtonStop.Location = New System.Drawing.Point(29, 77)
+		Me.ButtonStop.Location = New System.Drawing.Point(12, 41)
 		Me.ButtonStop.Name = "ButtonStop"
 		Me.ButtonStop.Size = New System.Drawing.Size(75, 23)
 		Me.ButtonStop.TabIndex = 1
@@ -53,7 +53,7 @@ Partial Class FormBouncingBall
 		'
 		'ButtonReset
 		'
-		Me.ButtonReset.Location = New System.Drawing.Point(32, 123)
+		Me.ButtonReset.Location = New System.Drawing.Point(12, 70)
 		Me.ButtonReset.Name = "ButtonReset"
 		Me.ButtonReset.Size = New System.Drawing.Size(75, 23)
 		Me.ButtonReset.TabIndex = 2
@@ -62,7 +62,7 @@ Partial Class FormBouncingBall
 		'
 		'ButtonExit
 		'
-		Me.ButtonExit.Location = New System.Drawing.Point(24, 183)
+		Me.ButtonExit.Location = New System.Drawing.Point(12, 99)
 		Me.ButtonExit.Name = "ButtonExit"
 		Me.ButtonExit.Size = New System.Drawing.Size(75, 23)
 		Me.ButtonExit.TabIndex = 3
@@ -77,9 +77,10 @@ Partial Class FormBouncingBall
 		'
 		'PictureBoxBall
 		'
-		Me.PictureBoxBall.Location = New System.Drawing.Point(137, 10)
+		Me.PictureBoxBall.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+		Me.PictureBoxBall.Location = New System.Drawing.Point(153, 12)
 		Me.PictureBoxBall.Name = "PictureBoxBall"
-		Me.PictureBoxBall.Size = New System.Drawing.Size(55, 50)
+		Me.PictureBoxBall.Size = New System.Drawing.Size(24, 24)
 		Me.PictureBoxBall.TabIndex = 4
 		Me.PictureBoxBall.TabStop = False
 		'
@@ -87,7 +88,7 @@ Partial Class FormBouncingBall
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-		Me.ClientSize = New System.Drawing.Size(270, 252)
+		Me.ClientSize = New System.Drawing.Size(300, 136)
 		Me.Controls.Add(Me.PictureBoxBall)
 		Me.Controls.Add(Me.ButtonExit)
 		Me.Controls.Add(Me.ButtonReset)

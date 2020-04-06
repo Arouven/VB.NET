@@ -1,8 +1,10 @@
 ﻿Public Class FormBouncingBall
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+    Private Sub FormBouncingBall_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim imgPath As String = AppDomain.CurrentDomain.BaseDirectory.Replace("\bin\Debug\", "\Images\ball.png")
+        PictureBoxBall.Image = Image.FromFile(imgPath)
+        PictureBoxBall.SizeMode = PictureBoxSizeMode.StretchImage
     End Sub
-
+    'AppDomain.CurrentDomain.BaseDirectory.Replace("\bin\Debug\", "\AudioVideo\intro.mp4")
     Private Sub ButtonAnimate_Click(sender As Object, e As EventArgs) Handles ButtonAnimate.Click
         Timer1.Start()
     End Sub
@@ -29,5 +31,9 @@
 
     Private Sub ButtonReset_Click(sender As Object, e As EventArgs) Handles ButtonReset.Click
         PictureBoxBall.Location = New Point(300, 0)
+    End Sub
+
+    Private Sub PictureBoxBall_Click(sender As Object, e As EventArgs) Handles PictureBoxBall.Click
+
     End Sub
 End Class
