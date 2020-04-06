@@ -1,5 +1,6 @@
 ﻿Public Class FormBouncingBall
     Private Sub FormBouncingBall_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        FormBouncingBall2.Show()
         Dim imgPath As String = AppDomain.CurrentDomain.BaseDirectory.Replace("\bin\Debug\", "\Images\ball.png")
         PictureBoxBall.Image = Image.FromFile(imgPath)
         PictureBoxBall.SizeMode = PictureBoxSizeMode.StretchImage
@@ -10,7 +11,7 @@
     End Sub
 
     Private Sub ButtonExit_Click(sender As Object, e As EventArgs) Handles ButtonExit.Click
-        Me.Close()
+        Me.Hide()
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick

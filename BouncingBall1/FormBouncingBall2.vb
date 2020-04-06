@@ -4,6 +4,8 @@
     Private ySpeed As Integer = 2.5
 
     Private Sub FormBouncingBall2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim F2 As New FormBouncingBall()
+        F2.Show()
         Me.Size = New Size(230, 175)
         Panel1.Size = New Size(110, 110)
         Dim imgPath As String = AppDomain.CurrentDomain.BaseDirectory.Replace("\bin\Debug\", "\Images\ball.png")
@@ -18,7 +20,7 @@
     End Sub
 
     Private Sub ButtonExit_Click(sender As Object, e As EventArgs) Handles ButtonExit.Click
-        Me.Close()
+        Me.Hide()
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
@@ -26,6 +28,8 @@
         If PictureBoxBall.Location.Y > (Panel1.Height - PictureBoxBall.Height) Then 'panel height = 110, picturebox height = 24
             Timer1.Stop()
             Timer2.Start()
+            Timer3.Stop()
+            Timer4.Stop()
         End If
     End Sub
 
