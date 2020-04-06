@@ -4,13 +4,14 @@
         PictureBoxBall.Image = Image.FromFile(imgPath)
         PictureBoxBall.SizeMode = PictureBoxSizeMode.StretchImage
     End Sub
-    'AppDomain.CurrentDomain.BaseDirectory.Replace("\bin\Debug\", "\AudioVideo\intro.mp4")
+
     Private Sub ButtonAnimate_Click(sender As Object, e As EventArgs) Handles ButtonAnimate.Click
         Timer1.Start()
     End Sub
 
     Private Sub ButtonExit_Click(sender As Object, e As EventArgs) Handles ButtonExit.Click
-        Me.Close()
+        Me.Hide()
+        FormBouncingBall2.Show()
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
@@ -33,7 +34,8 @@
         PictureBoxBall.Location = New Point(300, 0)
     End Sub
 
-    Private Sub PictureBoxBall_Click(sender As Object, e As EventArgs) Handles PictureBoxBall.Click
-
+    Private Sub ButtonStop_Click(sender As Object, e As EventArgs) Handles ButtonStop.Click
+        Timer1.Stop()
+        Timer2.Stop()
     End Sub
 End Class
