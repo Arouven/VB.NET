@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{44D76CC5-7FCB-4E8B-A4EC-879E598740A5}</ProjectGuid>
+    <ProjectGuid>{E65733D0-800D-4C6C-8FFC-30DDE595C2B0}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>BouncingBall1.My.MyApplication</StartupObject>
-    <RootNamespace>BouncingBall1</RootNamespace>
-    <AssemblyName>BouncingBall1</AssemblyName>
+    <StartupObject>BouncingBall2.My.MyApplication</StartupObject>
+    <RootNamespace>BouncingBall2</RootNamespace>
+    <AssemblyName>BouncingBall2</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -22,7 +22,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>BouncingBall1.xml</DocumentationFile>
+    <DocumentationFile>BouncingBall2.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +32,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>BouncingBall1.xml</DocumentationFile>
+    <DocumentationFile>BouncingBall2.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
