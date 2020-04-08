@@ -44,7 +44,6 @@ Partial Class FrmMyCalendar
 		'TimerCalendar
 		'
 		Me.TimerCalendar.Enabled = True
-		Me.TimerCalendar.Interval = 1
 		'
 		'LblTime
 		'
