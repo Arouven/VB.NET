@@ -12,6 +12,9 @@
 	End Sub
 
 	Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+		Dim f2 As New Form2
+		f2.Show()
+
 		Dim imgPath As String = AppDomain.CurrentDomain.BaseDirectory.Replace("\bin\Debug\", "\Images\")
 		Dim di As New IO.DirectoryInfo(imgPath)
 		Dim aryFi As IO.FileInfo() = di.GetFiles("*.png")
